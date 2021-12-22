@@ -1,0 +1,63 @@
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --dark-grayish-cyan-2: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --wight-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: var(--light-grayish-cyan);
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  margin-top: 20px;
+}
+.calculator {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 20px 20px 0 0;
+}
+.bill {
+  width: 100%;
+}
+.subtitle {
+  color: var(--dark-grayish-cyan);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.bill-amount {
+  width: 100%;
+  background-color: var(--wight-grayish-cyan);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.bill-amount img {
+  padding: 15px;
+}
+.bill-amount input {
+  color: var(--light-grayish-cyan);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;
+  text-align: end;
+  background-color: var(--wight-grayish-cyan);
+  border: none;
+  width: 100%;
+  margin-right: 20px;
+}
