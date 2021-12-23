@@ -142,3 +142,17 @@ main {
 .buttons .result-button:active {
   background-color: var(--light-grayish-cyan);
 }
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.attribution {
+  margin-bottom: 12px;
+}
+.attribution a {
+  color: var(--very-dark-cyan);
+}
+.attribution a:hover {
+  color: var(--strong-cyan);
+}

@@ -19,25 +19,25 @@
     <div class="calculator">
       <div class="bill">
         <p class="subtitle">Bill</p>
-        <div class="input-box">
+        <div id="bill-box" class="input-box">
           <img src="./assets/images/icon-dollar.svg" alt="Dollar sign">
-          <input id="bill-value" type="number" placeholder="$0.00">
+          <input id="bill-value" type="number" placeholder="$0.00" required>
         </div>
       </div>
 
       <div class="tip-percentage">
         <p class="subtitle">Tip %</p>
-        <div class="input-box">
+        <div id="percentage-box" class="input-box">
           <span class="percentage-icon">%</span>
-          <input id="tip-value" type="number" placeholder="0%">
+          <input id="tip-value" type="number" placeholder="0%" required>
         </div>
       </div>
 
       <div class="people">
         <p class="subtitle">Number of People</p>
-        <div class="input-box">
+        <div id="people-box" class="input-box">
           <img src="./assets/images/icon-person.svg" alt="Person">
-          <input id="people-value" type="number" placeholder="0">
+          <input id="people-value" type="number" placeholder="0" required>
         </div>
       </div>
 
@@ -64,10 +64,11 @@
     </div>
   </main>
 
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+  <footer>
+    <div class="attribution">
+      Coded by <a href="https://github.com/afbolivarg">Andrés Bolívar</a>.
+    </div>
+  </footer>
 
   <script src="./index.js"></script>
 </body>
