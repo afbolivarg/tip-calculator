@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
   <header>
@@ -19,23 +19,23 @@
     <div class="calculator">
       <div class="bill">
         <p class="subtitle">Bill</p>
-        <div class="bill-amount">
+        <div class="input-box">
           <img src="./assets/images/icon-dollar.svg" alt="Dollar sign">
-          <input id="bill-value" type="number" placeholder="0">
+          <input id="bill-value" type="number" placeholder="$0.00">
         </div>
       </div>
 
       <div class="tip-percentage">
         <p class="subtitle">Tip %</p>
-        <div class="percentage-input">
-          <img src="" alt="%">
-          <input id="tip-value" type="number" placeholder="0">
+        <div class="input-box">
+          <span class="percentage-icon">%</span>
+          <input id="tip-value" type="number" placeholder="0%">
         </div>
       </div>
 
       <div class="people">
         <p class="subtitle">Number of People</p>
-        <div class="people-amount">
+        <div class="input-box">
           <img src="./assets/images/icon-person.svg" alt="Person">
           <input id="people-value" type="number" placeholder="0">
         </div>
@@ -49,16 +49,16 @@
           </p>
           <p id="tip-per-person" class="result-number">$0.00</p>
         </div>
-        <div class="result-total">
+        <div class="result-per-person">
           <p>
             <span>Total</span>
             <span>/ person</span>
           </p>
           <p id="total-per-person" class="result-number">$0.00</p>
         </div>
-        <div>
-          <button id="calculate">CALCULATE</button>
-          <button id="reset-button" class="reset-button">RESET</button>
+        <div class="buttons">
+          <button id="calculate" class="result-button">CALCULATE</button>
+          <button id="reset-button" class="result-button">RESET</button>
         </div>
       </div>
     </div>

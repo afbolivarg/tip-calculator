@@ -6,6 +6,7 @@
   --light-grayish-cyan: hsl(185, 41%, 84%);
   --wight-grayish-cyan: hsl(189, 41%, 97%);
   --white: hsl(0, 0%, 100%);
+  --percentage-sign: rgb(158,187,189);
 }
 * {
   margin: 0;
@@ -27,10 +28,19 @@ header {
 header img {
   margin-top: 20px;
 }
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .calculator {
   background-color: var(--white);
   padding: 30px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  min-width: 300px;
+  margin-bottom: 40px;
 }
 .bill {
   width: 100%;
@@ -40,18 +50,25 @@ header img {
   font-weight: 700;
   margin-bottom: 5px;
 }
-.bill-amount {
+.input-box {
   width: 100%;
   background-color: var(--wight-grayish-cyan);
   border-radius: 5px;
   display: flex;
   align-items: center;
+  margin-bottom: 12px;
 }
-.bill-amount img {
+.input-box img {
   padding: 15px;
 }
-.bill-amount input {
-  color: var(--light-grayish-cyan);
+.input-box span {
+  padding: 7px 15px;
+  font-size: 22px;
+  font-weight: bolder;
+  color: var(--percentage-sign);
+}
+.input-box input {
+  color: var(--very-dark-cyan);
   font-size: 18px;
   font-weight: 700;
   font-family: 'Space Mono', monospace;
@@ -60,4 +77,68 @@ header img {
   border: none;
   width: 100%;
   margin-right: 20px;
+}
+.input-box input::placeholder{
+  color: var(--percentage-sign);
+}
+.input-box input::-webkit-outer-spin-button,
+.input-box input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-box input:focus {
+  outline: none;
+}
+.results {
+  background-color: var(--very-dark-cyan);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 30px;
+}
+.result-per-person {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.result-per-person p:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+.result-per-person p:nth-child(2) {
+  color: var(--strong-cyan);
+  font-size: 24px;
+  font-weight: bold;
+}
+.result-per-person p span:nth-child(1) {
+  color: var(--white);
+  font-weight: bold;
+  line-height: 22px;
+}
+.result-per-person p span:nth-child(2) {
+  font-size: 14px;
+  color: var(--dark-grayish-cyan-2);
+  font-weight: bold;
+  line-height: 14px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.buttons .result-button {
+  width: 45%;
+  max-width: 135px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  font-family: 'Space Mono', monospace;
+  color: var(--very-dark-cyan);
+  background-color: var(--strong-cyan);
+  font-weight: bold;
+}
+.buttons .result-button:hover {
+  opacity: 0.7;
+}
+.buttons .result-button:active {
+  background-color: var(--light-grayish-cyan);
 }
